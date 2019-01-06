@@ -5,9 +5,101 @@
 .mt_150 {
   margin-top: 150px;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .panel-title {
   height: 40px;
   line-height: 40px;
   font-size: 20px;
+}
+
+/* 左侧侧边栏 */
+.l_aside {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222D32;
+  z-index: 999;
+}
+.l_aside .brand {
+  width: 100%;
+  height: 50px;
+  background-color: #367FA9;
+}
+.l_aside .brand a {
+  color: #fff;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+.l_aside .user {
+  padding-top: 30px;
+  height: 180px;
+}
+.l_aside .user img {
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.l_aside .user p {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.l_aside .nav a {
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+}
+.l_aside .nav i {
+  margin-right: 2px;
+}
+.l_aside .nav a.current {
+  border-left: 3px solid #006699;
+  background-color: #1D1F21;
+}
+
+/* 右侧 */
+.l_main {
+  width: 100%;
+  height: 1000px;
+  padding-left: 180px;
+  padding-top: 50px;
+}
+.l_main .l_topbar {
+  width: 100%;
+  height: 50px;
+  padding-left: 180px;
+  background-color: #3C8DBC;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.l_main .l_topbar a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
 }
