@@ -15,7 +15,9 @@ ol {
   margin: 0;
   padding: 0;
 }
-
+.red {
+  color: #A94442;
+}
 .panel-title {
   height: 40px;
   line-height: 40px;
@@ -31,6 +33,10 @@ ol {
   left: 0;
   background-color: #222D32;
   z-index: 999;
+  transition: all 1s;
+}
+.l_aside.hidemenu {
+  left: -180px;
 }
 .l_aside .brand {
   width: 100%;
@@ -84,6 +90,10 @@ ol {
   height: 1000px;
   padding-left: 180px;
   padding-top: 50px;
+  transition: all 1s;
+}
+.l_main.hidemenu {
+  padding-left: 0;
 }
 .l_main .l_topbar {
   width: 100%;
@@ -93,6 +103,10 @@ ol {
   position: fixed;
   top: 0;
   right: 0;
+  transition: all 1s;
+}
+.l_main .l_topbar.hidemenu {
+  padding-left: 0;
 }
 .l_main .l_topbar a {
   display: block;
@@ -102,4 +116,15 @@ ol {
   font-size: 20px;
   text-align: center;
   color: #fff;
+}
+
+/* 首页 */
+.breadcrumb {
+  margin-top: 20px;
+}
+
+.echarts_l,
+.echarts_r {
+  width: 48%;
+  height: 400px;
 }
