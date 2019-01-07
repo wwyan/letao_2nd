@@ -5,6 +5,9 @@
 .mt_150 {
   margin-top: 150px;
 }
+.mb_20 {
+  margin-bottom: 20px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -127,4 +130,9 @@ ol {
 .echarts_r {
   width: 48%;
   height: 400px;
+}
+.table.table-bordered th, 
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
 }
