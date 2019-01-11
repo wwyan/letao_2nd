@@ -8,22 +8,55 @@
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
   <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/search.css">
 
 </head>
 <body>
   
   <div class="l_container">
     <div class="l_header">
-      <a href="index.html" class="icon_left">
-        <i class="fa fa-home"></i>
+      <a href="javascript: history.go(-1);" class="icon_left">
+        <i class="mui-icon mui-icon-back"></i>
       </a>
       <h3>乐淘云商</h3>
-      <a href="#" class="icon_right">
-        <i class="fa fa-search"></i>
-      </a>
+      
     </div>
 
-    <div class="l_main"></div>
+    <div class="l_main">
+      <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <!--这里放置真实显示的DOM内容-->
+          <div class="l_search">
+            <input type="text" class="search_input" placeholder="请输入搜索关键字">
+            <button class="mui-btn mui-btn-primary search_btn">搜索</button>
+          </div>
+
+          <div class="l_history">
+            <div class="l_history_title">
+              <span class="mui-pull-left">搜索历史</span>
+              <span class="mui-pull-right btn-empty">
+                <i class="fa fa-trash"></i>
+                清空记录
+              </span>
+
+            </div>
+
+            <div class="l_history_content">
+              <ul>
+                <li>
+                  <a href="#" class="">耐克</a>
+                  <i class="btn_delete mui-pull-right mui-icon mui-icon-closeempty"></i>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
 
     <div class="l_footer">
       <ul>
